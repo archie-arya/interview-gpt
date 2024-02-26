@@ -1,70 +1,79 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# InterviewGPT Chatbot
 
-## Available Scripts
+Welcome to InterviewGPT Chatbot! This project utilizes OpenAI's GPT-3.5 Turbo to simulate an interview conversation.
 
-In the project directory, you can run:
+## Setup
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js and npm installed
+- Firebase project created
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/your-username/InterviewGPT-Chatbot.git
+   ```
 
-### `npm run build`
+2. Change into the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd InterviewGPT-Chatbot
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+4. Set up Firebase:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   - Create a Firebase project: [Firebase Console](https://console.firebase.google.com/)
+   - Copy your Firebase configuration from the project settings.
+   - Replace the placeholder configuration in `src/firebase.js` with your Firebase configuration.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Create an OpenAI API key:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Obtain your OpenAI API key from the OpenAI platform.
+   - Replace the placeholder API key in `src/openapi.js` with your OpenAI API key.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. Run the app:
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   The app should be accessible at `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+1. Visit the app in your web browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Enter your name, area, interview type, and difficulty level.
 
-### Analyzing the Bundle Size
+3. Start the interview conversation with the AI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. The AI will ask questions, listen to your answers, and respond accordingly.
 
-### Making a Progressive Web App
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To deploy the app to Firebase Hosting:
 
-### Advanced Configuration
+```bash
+firebase login  # Log in to your Firebase account (if not logged in)
+firebase init   # Initialize Firebase project (select Hosting and follow the prompts)
+firebase deploy # Deploy the app to Firebase Hosting
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Your app will be live at the provided Firebase Hosting URL.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize this README according to the specific details and steps related to your project.
