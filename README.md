@@ -75,5 +75,3 @@ Your app will be live at the provided Firebase Hosting URL.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
-
-Feel free to customize this README according to the specific details and steps related to your project.
