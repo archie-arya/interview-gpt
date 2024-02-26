@@ -74,4 +74,3 @@ Your app will be live at the provided Firebase Hosting URL.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
