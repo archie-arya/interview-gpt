@@ -9,6 +9,7 @@ Welcome to InterviewGPT Chatbot! This project utilizes OpenAI's GPT-3.5 Turbo to
 
 - Node.js and npm installed
 - Firebase project created
+- OpenAI API Key access 
 
 ### Installation
 
