@@ -15,13 +15,13 @@ Welcome to InterviewGPT Chatbot! This project utilizes OpenAI's GPT-3.5 Turbo to
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/InterviewGPT-Chatbot.git
+   git clone https://github.com/archie-arya/interview-gpt.git
    ```
 
 2. Change into the project directory:
 
    ```bash
-   cd InterviewGPT-Chatbot
+   cd interview-gpt
    ```
 
 3. Install dependencies:
