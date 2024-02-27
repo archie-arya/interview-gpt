@@ -37,6 +37,8 @@ Welcome to InterviewGPT Chatbot! This project utilizes OpenAI's GPT-3.5 Turbo to
    - Copy your Firebase configuration from the project settings.
    - Replace the placeholder configuration in `src/firebase.js` with your Firebase configuration.
    - Inside `src/firebase` add the following code in the end
+  
+     
      ```bash
          export const saveUserResponse = async (name, area, interviewType, difficultyLevel) => {
           try {
