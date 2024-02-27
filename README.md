@@ -36,6 +36,30 @@ Welcome to InterviewGPT Chatbot! This project utilizes OpenAI's GPT-3.5 Turbo to
    - Create a Firebase project: [Firebase Console](https://console.firebase.google.com/)
    - Copy your Firebase configuration from the project settings.
    - Replace the placeholder configuration in `src/firebase.js` with your Firebase configuration.
+   - Inside `src/firebase` add the following code in the end
+     ```bash
+         export const saveUserResponse = async (name, area, interviewType, difficultyLevel) => {
+          try {
+            // Reference the 'userResponses' collection
+            const responsesCollection = collection(db, 'userResponses');
+        
+            // Create an object with user response data
+            const userResponseData = {
+              name,
+              area,
+              interviewType,
+              difficultyLevel,
+              timestamp: Timestamp.fromDate(new Date()),
+            };
+        
+            // Add a new document with an auto-generated ID to the 'userResponses' collection
+            await addDoc(responsesCollection, userResponseData);
+        
+          } catch (error) {
+            console.error('Error saving user response:', error);
+          }
+      };
+     ```
 
 5. Create an OpenAI API key:
 
